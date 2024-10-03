@@ -25,11 +25,9 @@ public class Calculadora {
         }
     }
 
-    //Método para dividir por cero
+  //  Método para dividir por cero
 
-//    public double zerodiv(double a, double b) {
-//        if (b == 0) {
-//            throw n
-//        }
-//    }
+   public double zeroDiv (double a, double b) {
+    return a / b;
+   }
 }

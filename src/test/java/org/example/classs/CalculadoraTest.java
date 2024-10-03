@@ -34,6 +34,11 @@ class CalculadoraTest {
         Calculadora calculadora = new Calculadora();
         double expexRes = 35.7;
         assertEquals(expexRes, calculadora.dividir(71.4, 2));
+    }
 
+    @Test
+    void zeroDiv() {
+        Calculadora calculadora = new Calculadora();
+       ArithmeticException exc = assertThrows(ArithmeticException.class, () -> {calculadora.dividir(24, 0);});
     }
 }
